@@ -10,6 +10,15 @@
   </head>
 
   <body>
-    <%= yield %>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
+    <h1>Simple AirBnB</h1>
+    <form method="get" action="/flats/new">
+      <button type="submit" class="btn btn-outline-primary">Add Flat</button>
+    </form>
+  </nav>
+
+  <%= yield %>
+
   </body>
 </html>

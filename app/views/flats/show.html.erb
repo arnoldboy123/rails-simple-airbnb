@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <div class="card m-2 p-4 bg-light">
+        <h1 class="card-title"><%= @flat.name %></h1>
+        <h4 class="card-subtitle"><%= @flat.address %></h4>
+      </div>
+      <div class="card m-2 p-4 bg-light">
+        <h1 class="card-title">A bit more about this flat...</h1>
+        <h4 class="card-subtitle"><%= @flat.description %></h4>
+      </div>
+      <div class="card m-2 p-4 bg-light">
+        <h1 class="card-title">Details</h1>
+        <h4 class="card-subtitle"><i class="fas fa-euro-sign"></i> <%= "#{@flat.price_per_night}" %> <i class="fas fa-users"></i> <%= "#{@flat.number_of_guests}" %></h4>
+      </div>
+    </div>
+    <div class="col-4">
+    </div>
+  </div>
+
+  <%= link_to "back to list of flats", flats_path, class: "m-3" %>
+
+</div>

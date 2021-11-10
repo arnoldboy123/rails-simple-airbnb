@@ -1,0 +1,26 @@
+<div class="container" style="width: 500px;">
+  <%= form_for(@flat) do |f| %>
+    <div class="input-group mb-3 d-flex justify-content-between mt-3">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+    <div class="input-group mb-3 d-flex justify-content-between">
+      <%= f.label :address %>
+      <%= f.text_field :address %>
+    </div>
+    <div class="input-group mb-3 d-flex justify-content-between">
+      <%= f.label :description %>
+      <%= f.text_field :description %>
+    </div>
+    <div class="input-group mb-3 d-flex justify-content-between">
+      <%= f.label :price_per_night %>
+      <%= f.number_field :price_per_night %>
+    </div>
+    <div class="input-group mb-3 d-flex justify-content-between">
+      <%= f.label :number_of_guests %>
+      <%= f.number_field :number_of_guests %>
+    </div>
+
+    <%= f.button :submit, class: "btn btn-primary" %>
+  <% end %>
+</div>
